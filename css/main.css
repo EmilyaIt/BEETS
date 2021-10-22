@@ -1162,11 +1162,9 @@ img {
   display: -ms-flexbox;
   display: flex;
 }
-
 .social__item {
   margin-left: 11px;
 }
-
 .social__link {
   display: block;
   margin-bottom: 1.25rem;
@@ -1246,7 +1244,7 @@ img {
   margin-bottom: 4.4rem;
 }
 .team__item {
-  margin-right: 20px;
+  margin-right: 1.25rem;
 }
 @media (max-width: 768px) {
   .team__item {
@@ -1274,7 +1272,7 @@ img {
 }
 
 .products-menu-section {
-  background: url(./../../img/bg-acco.png) center center/cover no-repeat;
+  background: url(./../img/bg-acco.png) center center/cover no-repeat;
   position: relative;
   color: white;
   -webkit-box-pack: end;
@@ -1588,7 +1586,7 @@ img {
 }
 
 .slider-desc-button {
-  background: url(./../../img/slider-click.png);
+  background: url(./../img/slider-click.png);
   width: 91px;
   height: 91px;
   border-radius: 4px;
@@ -1782,7 +1780,7 @@ img {
 }
 
 .product-slider__arrow {
-  background: url(./../../img/right-arrow.png) center center no-repeat;
+  background: url(./../img/right-arrow.png) center center no-repeat;
   background-size: contain;
   display: block;
   width: 1.5rem;
