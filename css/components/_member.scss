@@ -1,0 +1,92 @@
+.member {
+  &__photo {
+
+    @include tablets{
+      opacity: 0;
+      transition: all .5s ease-in-out;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      &_visible {
+        opacity: 1;
+        transition: all .5s ease-in-out;
+      }
+    }
+    
+  }
+
+  &__photo-logo{
+    width: 13.75rem;
+    height: 18.125rem;
+    margin-bottom: 1.5625rem;
+
+  }
+
+  &__name {
+    color: #292929;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 1.3125rem;
+    margin-bottom: .6875rem;
+
+    &-text{
+
+      @include tablets{
+        justify-content: center;
+      }
+    }
+  }
+
+  &__name-arrow {
+    margin-left: .25rem;
+    transition: all .5s ease-in-out;
+    
+    &_rotated {
+      transform: rotate(-180deg);
+      transition: all .5s ease-in-out;
+    }
+  }
+  
+  &__description {
+    overflow: hidden;
+    height: 0;
+    transition: height .3s;
+  }
+
+  &__description-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all .5s ease-in-out;
+
+
+    &-name {
+      color: #292929;;
+      margin-bottom: .25rem;
+      
+      @include tablets{
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+      }
+    }
+
+    &-text {
+      max-width: 221px;
+      text-align: center;
+    }
+
+    &_visible {
+      opacity: 1;
+      transition: all .5s ease-in-out;
+    }
+  }
+
+}

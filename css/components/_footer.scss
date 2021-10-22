@@ -1,0 +1,39 @@
+.footer {
+  height: 5.625rem;
+
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+
+  @include phones {
+    height: 9.4375rem;
+  }
+}
+
+.footer__container {
+  margin-top: 1.1875rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include phones {
+    flex-direction: column;
+  }
+}
+
+.contactcts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+
+  @include phones {
+    margin-bottom: .625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+

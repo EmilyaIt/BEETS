@@ -1,0 +1,48 @@
+.logo-icon {
+  width: 40px;
+  height: 40px; 
+  fill: #E01F3D;
+}
+
+.phone-number-icon {
+  width: .9375rem;
+  height: .9375rem;
+  fill: $black;
+  margin-right: 7px;
+
+  &:hover {
+    fill: $red;
+  }
+}
+
+.feature-left-icon {
+  width: 2.5rem;
+  height: 2.5rem; 
+}
+
+.feature-center-icon{
+  width: 2.5rem;
+  height: 2.5rem; 
+}
+
+.feature-right-icon {
+  width: 2.5rem;
+  height: 2.5rem; 
+}
+
+.benefit-icon {
+  width: 3.75rem;
+  height: 3.75rem;
+
+}
+
+.social__icon {
+  width: 30px;
+  height: 30px;
+  fill: #B3B3B3;
+
+  &:hover {
+    fill: #000;
+  }
+}
+

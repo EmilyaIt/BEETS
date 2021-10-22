@@ -1,0 +1,88 @@
+// .hamburger {
+//   width: 24px;
+//   height: 20px;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   display: none;
+//   position: fixed;
+//   cursor: pointer;
+//   z-index: 15;
+//   transition: all 0.4s;
+  
+
+//   @include tablets {
+//     display: inline-flex;
+//     position: fixed;
+//     right: .625rem;
+//   }
+// }
+
+// .hamburger__plank {
+//   flex-direction: column;
+//   display: block;
+//   background: $black;
+//   height: 4px;
+//   border-radius: 10px;
+
+//   width: 100%;
+//   transition: all 0.4s;
+// }
+
+.hamburger {
+  top: 20px;
+  right: 10%;
+  width: 24px;
+  height: 20px;
+  position: fixed;
+  cursor: pointer;
+  z-index: 15;
+  transition: all 0.4s;
+  display: none;
+  
+
+  @include tablets {
+    display: inline-flex;
+    position: fixed;
+    right: .625rem;
+  }
+ 
+  &__plank {
+    
+    background-color: $black;
+    height: 4px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 0.4s;
+
+    &:nth-child(2){
+      top:50%;
+      transform:translateY(-50%);
+    }
+    
+    &:nth-child(3){
+      bottom:0;
+      top:initial;
+    }
+  }
+  
+  &--active{
+    .hamburger__plank {
+      background-color: #fff;
+
+      &:nth-child(1){
+        opacity:0;
+      }
+      
+      &:nth-child(2){
+        transform:rotate(45deg);
+      }
+      
+      &:nth-child(3){
+        transform:rotate(-45deg) translateY(-4px) translateX(5px);
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.slider-section{
+  background: #F8FAF9;
+  position: relative;
+
+  &::before {
+    content: url(./../img/decor5.png);
+    bottom: rem(-16px);
+    right: 14rem;
+    position: absolute;
+
+    @include tablets{
+      top: 144rem;
+      left: 40rem;
+    }
+
+    @include phones {
+      top: 144rem;
+      left: 24rem;
+    }
+  }
+
+  &::before {
+    content: url(./../img/decor3.png);
+    top: rem(-16px);
+    left: 7rem;
+    position: absolute;
+
+    @include tablets {
+      bottom: 0;
+      left: 3.625rem; 
+    }
+
+    @include phones {
+      left: 3.625rem; 
+    }
+  }
+}

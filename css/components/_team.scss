@@ -1,0 +1,56 @@
+.team-section {
+  position: relative; 
+  
+  &::before {
+    content: url(./../img/decor5.png);
+    top: rem(-16px);
+    right: 14rem;
+    position: absolute;
+
+  
+    @include phones {
+      right: 4rem;
+    }
+  }  
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+
+  &__title{
+    margin-bottom: 4.4rem;
+  }
+
+  &__item {
+    margin-right: 20px;
+
+    @include tablets {
+      margin-bottom: 1rem;
+      margin-right: 0;
+    }
+    
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.team.team.team--version--desktop{
+
+  @include tablets{
+    display: none;
+  }
+}
+
+.team.team--version--moble {
+  display: none;
+
+  @include tablets{
+    display: block;
+  }
+  
+
+  
+}

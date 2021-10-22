@@ -1,0 +1,14 @@
+.reviews-section {
+  position: relative;
+  
+  &::before {
+    content: url(./../img/decor4.png);
+    bottom: rem(-16px);
+    left: rem(90px);
+    position: absolute;
+
+
+    
+  }
+ 
+}

@@ -1,0 +1,19 @@
+.phone-number__text {
+  font-style: normal;
+  white-space: wrap;
+  flex-shrink: 0;
+
+  &:hover {
+    color: $red;
+  }
+}
+.phone-number {
+  font-size: rem(18px);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    color: $red;
+  }
+}

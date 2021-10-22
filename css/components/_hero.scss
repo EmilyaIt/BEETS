@@ -1,0 +1,109 @@
+.hero {
+  height: 100%;
+  background-color: #F5F5F5;
+  color: $black;
+  padding: rem(23px) 0;
+  position: relative;
+  
+
+  &::before {
+    content: url(./../../img/decor1.png);
+    position: absolute;
+    bottom: rem(-22px);
+    right: 12.125rem;
+
+    @include phones {
+      right: 3.125rem;
+    }
+  }
+}
+
+.hero__title {
+  width: 41%;
+  text-transform: uppercase;
+  margin-bottom: rem(90px);
+
+  @include tablets {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 6%;
+    margin-top: 18rem;
+    margin-bottom: 0;
+  }
+
+  @include phones {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+}
+
+.hero__features {
+  @include tablets {
+    display: none;
+  }
+}
+
+.hero__container { 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background: url(./../img/Ellipse.png) left 102% top rem(85px) no-repeat, 
+  url(./../img/bg-main.png) center center no-repeat;
+
+  @include tablets{
+    background: url(./../img/Ellipse.png) center top 6rem no-repeat, 
+  url(./../img/bg-main.png) center center no-repeat;
+    background-size: 20rem;
+  }
+
+  @include phones{
+    background: url(./../img/Ellipse.png) center top 6.3125rem no-repeat, 
+  url(./../img/bg-main.png) center center no-repeat;
+    background-size: 18rem;
+  }
+}
+
+.hero__title-main {
+  font-size: rem(48px);
+  line-height: 1.1;
+  font-weight: bold;
+  margin-bottom: rem(16px);
+
+  @include tablets {
+    padding: 0 2%;
+  }
+
+  @include phones {
+    padding: 10px 9px 0 9px;
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+  
+}
+
+.hero__title-desc {
+  font-size: rem(18px);
+  margin-bottom: rem(50px);
+  padding-right: 10%;
+  text-transform: none;
+  font-weight: normal;
+  line-height: rem(24px);
+
+  @include tablets{
+    padding: 0 20%;
+    margin-top: 0;
+    margin-bottom: 1.75rem;
+  }
+
+  @include phones {
+    
+    padding: 0 4rem;
+    }
+}
+

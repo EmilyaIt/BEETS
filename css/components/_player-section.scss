@@ -1,0 +1,11 @@
+.player-section {
+  position: relative;
+    
+  &::before {
+    content: url(./../img/decor6.png);
+    bottom: rem(-16px);
+    right: 14rem;
+    position: absolute;
+   
+  }
+}
