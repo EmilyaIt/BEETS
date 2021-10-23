@@ -1,241 +1,152 @@
-.slider-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.slider-side {
-  width: 50%;
-  margin-right: 3.75rem;
-
-  @include tablets{
-    margin-right: 0;
-  }
-
-  &-right{
-    @include tablets {
-      width: 100%;
-     
-    }
-  }
-}
-
-
-.slider-desc {
-  position: relative;
-  display: inline-block;
-}
-
-.slider-desc-button {
-  background: url(./../img/slider-click.png);
-  width: 91px;
-  height: 91px;
-  border-radius: 4px;
-  border: none;
-    
-    @include tablets {
-      display: none;
-
-    }
-}
-
-.slider-desc-cocntent {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  width: 273px;
-  height: 294px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  border-radius: 4px;
-}
-
-.slider-description {
-  @include tablets {
+.slider {
+  &-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-  }
-}
 
-
-.slider__item-specification a:hover {background-color: #ddd;}
-
-.slider-desc:hover .slider-desc-cocntent {display: block;}
-
-.slider-desc:hover .slider-desc-button {background-color: #3e8e41;}
-
-.slider-desc-cocntent__list{
-  margin: 1.5625rem;
-}
-.slider-desc-cocntent__item {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 1.25rem;
-  
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
-.slider-description {
-
-  @include tablets{
-    text-align: center;
-  }
-}
-
-
-.slider-title {
-  font-weight: bold;
-  font-size: 2.25rem;
-  line-height: 2.625rem;
-  text-transform: uppercase;
-  color: #292929;
-
-
-
-  @include tablets {
-    font-size: 1.75rem;
-  }
-}
-.slider-text {
-  margin-bottom: 1.5625rem;
-  padding-right: 5rem;
-
-  @include tablets{
-    padding: 0;
-  }
-}
-
-.slider__list-specification {
-  display: flex;
-  margin-bottom: 2.1875rem;
-  padding: 0;
-
-}
-
-.slider__item-specification {
-  position: relative;
-  padding: 0;
-  margin-right: 3.75rem;
-
-  &:last-child{
-    margin-right: 0;
-  }
-}
-
-.slider-specification-value {
-  color: #000;
-  font-weight: bold;
-}
-
-.slider-price {
-  display: flex;
-
-  @include tablets{
-    justify-content: center;
-  }
-}
-
-.slider-price-pay {
-  font-size: 2.25rem;
-  line-height: 3.75rem;
-  text-transform: uppercase;
-  color: #151515;
-  margin-right: .9375rem;
-}
-
-
-// dhtbldkxxdjk
-
-
-.slider-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.products-slider {
-  position: relative;
-
-  .bx-wrapper {
-    border: 0;
-    background: transparent;
-    box-shadow: none;
-  }
-}
-
-.products {
-  margin: 0;
-  padding: 0;
-  align-items: center;
-  // display: flex;
-  // flex-direction: column;
-}
-
-.products__item {
-  // width: 100%;
-  // list-style: none;
-  // margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  @include tablets {
-    flex-direction: column;
   }
 
+  &-side {
+    width: 50%;
+    margin-right: 3.75rem;
 
-  // @include tablets {
-  //   display: block;
-  // }
-}
-
-.product-slider__arrow{
-  background: url(./../img/right-arrow.png) center center no-repeat; 
-  background-size: contain;
-  display: block;
-  width: 1.5rem;
-  height: 2.5rem;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-
-  &--direction--next {
-    top: 315px;
-    right: 2rem;
-  
-    @include tablets{
-      right: 6.75rem;
-      top: 14.4rem;
+    @include tablets {
+      margin-right: 0;
     }
 
-    @include phones{
-      right: 0;
-      top: 10.25rem;
+    &-right {
+      @include tablets {
+        width: 100%;
+
+      }
     }
   }
 
-  &--direction--prev {
-    left: -4.375rem;
-    top: 296px;
-    transform: rotate(-180deg);
+  &-desc {
+    position: relative;
+    display: inline-block;
 
-    @include tablets{
-      left: 6.875rem;
-      top: 13.1875rem;
+    &-button {
+      background: url(./../img/slider-click.png);
+      width: 91px;
+      height: 91px;
+      border-radius: 4px;
+      border: none;
+
+      @include tablets {
+        display: none;
+
+      }
     }
+
+    &-cocntent {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      width: 273px;
+      height: 294px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      border-radius: 4px;
+
+      &__list {
+        margin: 1.5625rem;
+      }
+
+      &__item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.25rem;
+        align-items: center;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      &-name{
+        align-items: start;
+      }
+    }
+  }
+
+  &-description {
+    @include tablets {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+
+  &-title {
+    font-weight: bold;
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+    text-transform: uppercase;
+    color: #292929;
     
-    @include phones {
-      left: 0;
-      top: 9.1875rem;
+    @include tablets {
+      font-size: 1.75rem;
+    }
+  }
+
+  &-text {
+    margin-bottom: 1.5625rem;
+    padding-right: 5rem;
+
+    @include tablets {
+      padding: 0;
+    }
+  }
+
+  &__list-specification {
+    display: flex;
+    margin-bottom: 2.1875rem;
+    padding: 0;
+
+  }
+
+  &__item-specification {
+    position: relative;
+    padding: 0;
+    margin-right: 3.75rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &-specification-value {
+    color: #000;
+    font-weight: bold;
+  }
+
+  &-price {
+    display: flex;
+
+    @include tablets {
+      justify-content: center;
+    }
+
+    &-pay {
+      font-size: 2.25rem;
+      line-height: 3.75rem;
+      text-transform: uppercase;
+      color: #151515;
+      margin-right: .9375rem;
     }
   }
 }
 
+.slider__item-specification a:hover {
+  background-color: #ddd;
+}
 
+.slider-desc:hover .slider-desc-cocntent {
+  display: block;
+}
 
+.slider-desc:hover .slider-desc-button {
+  background-color: #3e8e41;
+}

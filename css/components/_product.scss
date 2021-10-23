@@ -1,0 +1,42 @@
+.product-slider__arrow{
+  background: url(./../img/right-arrow.png) center center no-repeat; 
+  background-size: contain;
+  display: block;
+  width: 1.5rem;
+  height: 2.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+
+  &--direction--next {
+    top: 257px;
+    right: 2rem;
+  
+    @include tablets{
+      right: 6.75rem;
+      top: 14.4rem;
+    }
+
+    @include phones{
+      right: 0;
+      top: 10.25rem;
+    }
+  }
+
+  &--direction--prev {
+    left: -4.375rem;
+    top: 240px;
+    transform: rotate(-180deg);
+
+    @include tablets{
+      left: 6.875rem;
+      top: 13.1875rem;
+    }
+    
+    @include phones {
+      left: 0;
+      top: 9.1875rem;
+    }
+  }
+}

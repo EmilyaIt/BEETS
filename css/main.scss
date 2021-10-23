@@ -25,7 +25,7 @@ $white: #FFFFFF;
 
 //components
 @import './components/hero';
-
+@import './components/headline';
 @import './components/header';
 @import './components/menu';
 @import './components/hamburger';
@@ -37,7 +37,8 @@ $white: #FFFFFF;
 @import './components/benefit';
 @import './components/benefits-section';
 @import './components/reviews';
-
+@import './components/products';
+@import './components/product';
 @import './components/reviews-section';
 // @import './components/video-section';
 // @import './components/sound';

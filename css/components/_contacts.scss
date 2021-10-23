@@ -1,0 +1,14 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+
+  @include phones {
+    margin-bottom: .625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

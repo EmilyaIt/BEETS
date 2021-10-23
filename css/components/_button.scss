@@ -10,35 +10,20 @@
   font-size: 1.1875rem;
   line-height: 1.125rem;
 
-  // @include phones{
-  //   padding: 1.8rem 3.6rem;
-  // }
-
   &:hover {
     background: #CA1B36;
 
   }
 
-}
-
-.button--transperent {
-  background: transparent;
-  text-transform: none;
-  font-weight: normal;
-  margin-left: rem(-28px);
-  &:hover{
-    color: #E01F3D;
+  &--transperent {
     background: transparent;
+    text-transform: none;
+    font-weight: normal;
+    margin-left: rem(-28px);
+
+    &:hover {
+      color: #E01F3D;
+      background: transparent;
+    }
   }
-}
-
-.form__button {
-  margin-top: rem(45px);  
-  
-}
-  
-.form__btns {
-  display: flex;
-  justify-content: center;
-
 }

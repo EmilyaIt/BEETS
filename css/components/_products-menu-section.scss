@@ -3,15 +3,14 @@
   position: relative;
   color: white;
   justify-content: flex-end;
-}
 
-
-.products-menu-section__title {
-  color: #fff;
-  top: 7.5rem;
-  left: 5.625rem;
-  text-align: start;
-  position: absolute;
+  &__title {
+    color: #fff;
+    top: 7.5rem;
+    left: 5.625rem;
+    text-align: start;
+    position: absolute;
+  }
 }
 
 .products-menu {
@@ -20,60 +19,55 @@
   right: 0;
   bottom: 0;
   position: absolute;
-}
 
-.products-menu__item {
-  // position: relative;
-  display: flex;
-  // cursor: pointer;
-  height: 100%;
-  
-}
+  &__item {
+    display: flex;
+    height: 100%;
 
-.products-menu__title { 
-  position: relative;
-  width: 6.375rem;  
-  text-decoration: none;
-  // display: flex;
+  }
 
-}
+  &__title {
+    position: relative;
+    width: 6.375rem;
+    text-decoration: none;
 
-.products-menu__title.gray{
-  background-color: #999999;
-}
+    &.gray {
+      background-color: #999999;
+    }
 
-.products-menu__title.black{
-  background-color: #151515;
-}
+    &.black {
+      background-color: #151515;
+    }
 
-.products-menu__title.red{
-  background-color: #E01F3C;
-}
+    &.red {
+      background-color: #E01F3C;
+    }
+  }
 
+  &__text {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    font-weight: bold;
+    font-size: 2.25rem;
+    line-height: 2.6875rem;
+    right: 2.9375rem;
+    bottom: 0;
+    white-space: nowrap;
+  }
 
-.products-menu__text {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  font-weight: bold;
-  font-size: 2.25rem;
-  line-height: 2.6875rem;
-  right: 2.9375rem;
-  bottom: 0;
-  white-space: nowrap;
-}
+  &__content {
+    background: rgba(51, 53, 55, 0.9);
+    width: 0;
+    // padding: 0;
+    overflow: hidden;
+    transition: width .7s;
+    position: relative;
+    transition: width .7s;
+  }
 
-.products-menu__content {
-  background: rgba(51, 53, 55, 0.9);
-  width: 0;
-  // padding: 0;
-  overflow: hidden;
-  transition: width .7s;
-  position: relative;
-  transition: width .7s;
-}
-
-.products-menu__container {
-  padding: 2.75rem 4.5625rem 2.8125rem 2.25rem;
+  &__container {
+    padding: 2.75rem 4.5625rem 2.8125rem 2.25rem;
+  }
 }

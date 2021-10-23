@@ -22,6 +22,14 @@
 
 .menu {
 
+  &__list-hamburger {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
   &__item-hamburger{
     margin-bottom:20px;
     display:flex;
@@ -39,11 +47,24 @@
   }
   
   &__link-hamburger{
+    color: #fff;
+    font-size: 2.25rem;
+    line-height: 4.5rem;
 
     &:hover{
       opacity:.7;
     }
   }
+}
+
+.menu.menu-hamburger {
+  @include tablets {
+    display: flex;
+  }
+}
+
+.menu__item.menu__item-hamburger {
+  margin-right: 0;
 }
 
 .body--active-menu {
