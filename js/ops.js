@@ -2,16 +2,17 @@ const sections = $("section");
 const display = $(".maincontent");
 const sideMenu = $(".fixed-menu");
 const menuItems = sideMenu.find(".fixed-menu__item");
+const menuLinks = menuItems.find(".fixed-menu__link");
 
 let inScroll = false;
 
 sections.first().addClass("active");
 
-const countSectionPosition = sectionEq => {
+const countSectionPosition = (sectionEq) => {
   return sectionEq * -100;
 }
 
-const changeMenuThemeForSection = sectionEq => {
+const changeMenuThemeForSection = (sectionEq) => {
   const currentSection = sections.eq(sectionEq);
   const menuTheme = currentSection.attr("data-sidemenu-theme"); 
   const activeClass = ".fixed-menu--shadowed"
@@ -21,11 +22,18 @@ const changeMenuThemeForSection = sectionEq => {
   } else {
     sideMenu.removeClass(activeClass);
   }
-}
+};
+
+const resetActiveClassForLink = (links, linkEq, activeClass) => {
+  links.eq(linkEq).addClass(activeClass).siblings().removeClass(activeClass);
+};
 
 const resetActiveClassForItem = (items, itemEq, activeClass) => {
   items.eq(itemEq).addClass(activeClass).siblings().removeClass(activeClass);
-}
+};
+
+
+
 
 const performTransition = (sectionEq) => {
 
@@ -41,11 +49,13 @@ const performTransition = (sectionEq) => {
     });
   
     resetActiveClassForItem(sections, sectionEq, "active");
+    resetActiveClassForLink(sections, sectionEq, "active");
 
     setTimeout(() => {
       inScroll = false;
 
-      resetActiveClassForItem(menuItems, sectionEq, "fixed-menu__item--active");
+      resetActiveClassForItem(menuItems, sectionEq, "fixed-menu__item--active"),
+      resetActiveClassForLink(menuLinks, sectionEq, "fixed-menu__link--active");
     }, 1300);
   }
 };

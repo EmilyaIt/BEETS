@@ -31,4 +31,4 @@ function toggleMenu(){
   body.classList.toggle('body--active-menu');
 }
 
-burger.addEventListener('click' , toggleMenu);
+burger.addEventListener('click', toggleMenu);

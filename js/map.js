@@ -18,7 +18,7 @@ const init = () => {
     draggable: false,
     iconLayout: 'default#image',
 
-    iconImageHref: "./../svg/map-marker.svg", 
+    iconImageHref: "./svg/map-marker.svg", 
     iconImageSize: [58, 73],
     iconImageOffset: [-35, -52]
   });
