@@ -5,6 +5,9 @@
   padding: rem(23px) 0;
   position: relative;
 
+  @include tablets {
+    height: 100%;
+  }
 
   &::before {
     content: url(./../../img/decor1.png);
