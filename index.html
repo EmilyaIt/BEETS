@@ -534,19 +534,22 @@
         <h2 class="section__title video__title">как мы работаем</h2>
         <div class="video__container">
           <div class="video__player">
-            <iframe width="560" height="315"
-            src="https://www.youtube-nocookie.com/embed/wE3BHISuJLc?controls=0" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-            </iframe>
+            <video id="player" poster="./img/video-scr.png">
+              <source src="./player/videoplayback.mp4" type="video/mp4">
+              <!-- <iframe width="662" height="391.82";"
+                src="https://www.youtube-nocookie.com/embed/wE3BHISuJLc?controls=0" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe> -->
+            </video>
             <img src="./img/play.png" alt="" class="play video__player-img">
           </div>
           <div class="video__toolbar">
             <div class="duration">
               <img src="./img/play-min.png" alt="" class="play duration__img">
-              <input type="range" class="duration__length" id="durationLevel">
+              <input type="range" class="duration__length durationLevel" id="durationLevel">
             </div>
             <div class="sound">
               <img src="./img/sound-min.png" alt="" class="sound__mic" id="mic">
@@ -779,8 +782,8 @@
   <script src="./js/slider.js"></script>
   <script src="./js/menu.js"></script>
   <script src="./js/player.js"></script>
-  <script src="./js/map.js"></script>
-  <script src="./js/modal.js "></script>  
+  <script src="./js/modal.js "></script> 
+  <script src="./js/map.js"></script> 
   <script src="./js/ops.js"></script>
 
 </body>
