@@ -535,21 +535,14 @@
         <div class="video__container">
           <div class="video__player">
             <video id="player" poster="./img/video-scr.png">
-              <source src="./player/videoplayback.mp4" type="video/mp4">
-              <!-- <iframe width="662" height="391.82";"
-                src="https://www.youtube-nocookie.com/embed/wE3BHISuJLc?controls=0" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-              </iframe> -->
+              <source src="../player/videoplayback.mp4" type="video/mp4">
             </video>
             <img src="./img/play.png" alt="" class="play video__player-img">
           </div>
           <div class="video__toolbar">
             <div class="duration">
               <img src="./img/play-min.png" alt="" class="play duration__img">
-              <input type="range" class="duration__length durationLevel" id="durationLevel">
+              <input type="range" class="duration__length" id="durationLevel">
             </div>
             <div class="sound">
               <img src="./img/sound-min.png" alt="" class="sound__mic" id="mic">
@@ -564,9 +557,20 @@
         <div class="container">
           <h2 class="section__title player__title">Как мы работаем</h2>
           <div class="player-section__container">
-            <div class="player">
+            <div class="player active">
               <div class="player__wrapper">
                 <div id="yt-player" class="player__elem"></div>
+                <div class="player__splash"></div>
+              </div>
+              <div class="player__controls">
+                <button class="player__start"></button>
+                <div class="player__playback">
+                  <button class="player__playback-button"></button>
+                </div>
+                <button class="sound__start"></button>
+                <div class="sound__playback">
+                  <button class="sound__playback-button"></button>
+                </div>
               </div>
             </div>
           </div>
