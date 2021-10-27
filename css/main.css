@@ -807,7 +807,6 @@ img {
   width: 100%;
 }
 .video__container {
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
