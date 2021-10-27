@@ -23,6 +23,7 @@ $('#order-form').submit((e) => {
     });
 
     request.always((data) =>{
+
       const message = data?.responseJSON?.message || data?.message;
       modalWindow.classList.add('modal_active');
       const modalText = document.querySelector('.modal__content');
