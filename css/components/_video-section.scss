@@ -13,36 +13,58 @@
 
   &__player {
     position: relative;
-    max-width: 41.375rem;
-    // max-height: 24.48875rem;
+    width: 41rem;
+
+    @include phones {
+      width: 24.625rem;
+      
+    }
+
 
     &-img {
       position: absolute;
-      left: 20.6875rem;
-      top: 12.244375rem;
+      left: 18rem;
+      top: 10rem;
       cursor: pointer;
+      height: 4.375rem;
+      width: 2.90625rem;
 
-      &--active{
+      @include phones {
+        left: 11rem;
+        top: 5rem;
+      }
+
+      &--active {
         opacity: 0;
-        
+
       }
     }
   }
 
   &__toolbar {
-    width: 41.375rem;
-    height: 2.180625rem;
+    width: 41rem;
+    height: 2.1875rem;
     background-color: #151515;
-    margin-top: -0.6875rem;
+    margin-top: -0.95rem;
     display: flex;
+
+    @include phones {
+      width: 24.625rem;
+      height: 1.298125rem;
+      margin-top: -0.65rem;
+    }
   }
 }
 
 #player {
-  max-width: 41.375rem;
-  min-width: 41.375rem;
-  max-height: 24.48875rem;
-  min-height: 24.48875rem;
+
+  width: 41rem;
+  height: 24.48875rem;
+
+  @include tablets {
+    width: 24.625rem;
+    height: 14.575rem;
+  }
+
+
 }
-
-

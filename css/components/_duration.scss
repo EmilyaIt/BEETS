@@ -4,23 +4,38 @@
 
 
   &__img {
-    padding: 5px 20px;
+    padding: 5px 1.25rem;
     cursor: pointer;
+    
+    // @include phones {
+    //   width: .40625rem;
+    //   height: .59375rem;
+    // }
   }
 
   &__length {
-    width: 444px;
-    height: 4px;
-    border-radius: 1px;
+    width: 27.75rem;
+    height: .25rem;
+    border-radius: .0625rem;
     background-color: #626262;
     -webkit-appearance: none;
     /*Override default CSS styles*/
     appearance: none;
     outline: none;
 
+    @include phones {
+      width: 16.46625rem;
+      height: .148125rem;
+    }
+
     &--other {
-      width: 58px;
-      height: 4px;
+      width: 3.625rem;
+      height: .25rem;
+
+      @include phones {
+        width: 2.30625rem;
+        height: .148125rem;
+      }
     }
 
     &::-webkit-slider-thumb {
@@ -29,15 +44,15 @@
       appearance: none;
       background: #626262;
       cursor: pointer;
-      width: 13px;
-      height: 13px;
+      width: .8125rem;
+      height: .8125rem;
       border-radius: 50%;
     }
   }
 
   &__circle {
     cursor: pointer;
-    margin-top: -4px;
+    margin-top: -0.25rem;
     display: block;
 
 
@@ -46,4 +61,6 @@
       position: absolute;
     }
   }
+
+
 }
